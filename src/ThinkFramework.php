@@ -24,9 +24,9 @@ class ThinkFramework extends LibraryInstaller
      */
     public function getInstallPath(PackageInterface $package)
     {
-        if ('topthink/framework' !== $package->getPrettyName()) {
-            throw new InvalidArgumentException('Unable to install this library!');
-        }
+//        if ('topthink/framework' !== $package->getPrettyName()) {
+//            throw new InvalidArgumentException('Unable to install this library!');
+//        }
 
         if ($this->composer->getPackage()->getType() !== 'project') {
             return parent::getInstallPath($package);
